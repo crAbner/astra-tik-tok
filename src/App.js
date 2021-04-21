@@ -2,10 +2,12 @@ import { HashRouter, Route , Switch} from 'react-router-dom'
 import Home from './pages/Home'
 import Upload from './pages/Upload'
 import './App.css'
+import Header from './components/Header'
 
 const App = () => {
   return (
     <HashRouter>
+        <Header />
     <Switch>
       <Route path= "/upload" component={Upload}/>
       <Route path= "/" component={Home}/>
